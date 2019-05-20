@@ -93,8 +93,8 @@ public class UnderworldBiome extends Biome {
                         new CountRangeConfig(20, 8, 16, 256)));
 
         this.addFeature(GenerationStage.Decoration.UNDERGROUND_STRUCTURES,
-                createCompositeFeature(Feature.DUNGEONS, IFeatureConfig.NO_FEATURE_CONFIG, DUNGEON_ROOM,
-                        new DungeonRoomConfig(8)));
+                createCompositeFeature(Feature.UNDERWORLD_DUNGEONS, IFeatureConfig.NO_FEATURE_CONFIG, DUNGEON_ROOM,
+                        new DungeonRoomConfig(8,140)));
 
         this.addSpawn(EnumCreatureType.AMBIENT, new Biome.SpawnListEntry(EntityType.BAT, 10, 8, 8));
         this.addSpawn(EnumCreatureType.MONSTER, new Biome.SpawnListEntry(EntityType.SPIDER, 100, 4, 4));
