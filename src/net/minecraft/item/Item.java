@@ -1169,7 +1169,7 @@ public class Item implements IItemProvider {
       }
       //MITEFOODS
       {
-         registerItem("bowl_salad", new ItemFood(1, 1F, false, (new Item.Properties()).setItemGroup(ItemGroup.FOOD)));
+         registerItem("bowl_salad", new ItemSoup(1, (new Item.Properties()).setItemGroup(ItemGroup.FOOD)));
       }
       //MITE Blocks
       {
