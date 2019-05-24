@@ -8,6 +8,8 @@ _**(Due to copyright problems with this mod, I have to stop a version to make th
 * Add a button to open the Github repository to the main GUI
 ## Generating
 * Change the height of the dungeon in the underworld, with a minimum of 140
+## Bug fix
+* fix #34 
 --- 
 # B0.5.7 ChangeLog
 ## Generating
