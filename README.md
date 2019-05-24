@@ -7,12 +7,6 @@ Go to the underground world and dig diamonds then get rich overnight._**
 * Mobs are more aggressive
 * Poor endurance
 * Add a variety of monsters, food, tools, armor
-## How to install
-* Click on the release above to select a version and download MITE1.13.2.jar
-* Install the vanilla 1.13.2 using any launcher
-* Rename the downloaded MITE1.13.2.jar to 1.13.2.jar
-* Replace the original version of 1.13.2.jar
-* Start the game.Have fun
  
  # About
 This version of Minecraft is based on the source code of vanilla 1.13.2 provided by 
