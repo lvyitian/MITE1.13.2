@@ -23,6 +23,7 @@ public class GuiScreenLoading extends GuiScreen {
    private ResourceLocation field_195191_g;
 
    protected void initGui() {
+
       try {
          InputStream inputstream = this.mc.getPackFinder().func_195746_a().getResourceStream(ResourcePackType.CLIENT_RESOURCES, field_195190_f);
          this.field_195191_g = this.mc.getTextureManager().getDynamicTextureLocation("logo", new DynamicTexture(NativeImage.read(inputstream)));
@@ -38,6 +39,7 @@ public class GuiScreenLoading extends GuiScreen {
    }
 
    public void render(int p_73863_1_, int p_73863_2_, float p_73863_3_) {
+
       Framebuffer framebuffer = new Framebuffer(this.width, this.height, true);
       framebuffer.bindFramebuffer(false);
       this.mc.getTextureManager().bindTexture(this.field_195191_g);

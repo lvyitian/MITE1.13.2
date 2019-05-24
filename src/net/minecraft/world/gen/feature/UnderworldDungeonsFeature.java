@@ -14,6 +14,8 @@ import net.minecraft.world.gen.IChunkGenSettings;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.structure.StructurePiece;
 import net.minecraft.world.storage.loot.LootTableList;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 

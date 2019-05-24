@@ -120,15 +120,15 @@ public class GuiMainMenu extends GuiScreen {
    }
 
    protected void initGui() {
-      this.widthCopyright = this.fontRenderer.getStringWidth("Copyright Mojang AB. Do not distribute!");
+      this.widthCopyright = this.fontRenderer.getStringWidth("Copyright Mojang AB & XiaoYu233. Do not distribute!");
       this.widthCopyrightRest = this.width - this.widthCopyright - 2;
       Calendar calendar = Calendar.getInstance();
       calendar.setTime(new Date());
-      if (calendar.get(2) + 1 == 12 && calendar.get(5) == 24) {
+      if (calendar.get(Calendar.MONTH) + 1 == 12 && calendar.get(Calendar.DATE) == 24) {
          this.splashText = "Merry X-mas!";
-      } else if (calendar.get(2) + 1 == 1 && calendar.get(5) == 1) {
+      } else if (calendar.get(Calendar.MONTH) + 1 == 1 && calendar.get(Calendar.DATE) == 1) {
          this.splashText = "Happy new year!";
-      } else if (calendar.get(2) + 1 == 10 && calendar.get(5) == 31) {
+      } else if (calendar.get(Calendar.MONTH) + 1 == 10 && calendar.get(Calendar.DATE) == 31) {
          this.splashText = "OOoooOOOoooo! Spooky!";
       }
 
@@ -145,9 +145,22 @@ public class GuiMainMenu extends GuiScreen {
             GuiMainMenu.this.mc.displayGuiScreen(new GuiOptions(GuiMainMenu.this, GuiMainMenu.this.mc.gameSettings));
          }
       });
-      this.addButton(new GuiButton(4, this.width / 2 + 2, j + 72 + 12, 98, 20, I18n.format("menu.quit")) {
+      this.addButton(new GuiButton(4, this.width / 2 + 2, j + 84, 98, 20, I18n.format("menu.quit")) {
          public void onClick(double p_194829_1_, double p_194829_3_) {
             GuiMainMenu.this.mc.shutdown();
+         }
+      });
+      this.addButton(new GuiButtonImage(15,this.width / 2 + 105, j + 81, 25, 25,40,106,25,GuiButton.BUTTON_TEXTURES) {
+         @Override
+         public void onClick(double p_194829_1_, double p_194829_3_) {
+           GuiMainMenu.this.mc.displayGuiScreen(new GuiConfirmOpenLink((p_confirmResult_1_, p_confirmResult_2_) -> {
+              if (p_confirmResult_2_ == 15) {
+                 if (p_confirmResult_1_) {
+                    Util.getOSType().openURI("https://github.com/XiaoYuOvO/MITE1.13.2");
+                 }
+                 GuiMainMenu.this.mc.displayGuiScreen(GuiMainMenu.this);
+              }
+           },"https://github.com/XiaoYuOvO/MITE1.13.2",15,false));
          }
       });
       this.addButton(new GuiButtonLanguage(5, this.width / 2 - 124, j + 72 + 12) {
@@ -273,7 +286,7 @@ public class GuiMainMenu extends GuiScreen {
       GlStateManager.scalef(f, f, f);
       this.drawCenteredString(this.fontRenderer, this.splashText, 0, -8, -256);
       GlStateManager.popMatrix();
-      String s = "Minecraft 1.13.2";
+      String s = "Minecraft 1.13.2 MITE-B0.5.7";
       if (this.mc.isDemo()) {
          s = s + " Demo";
       } else {
@@ -281,7 +294,11 @@ public class GuiMainMenu extends GuiScreen {
       }
 
       this.drawString(this.fontRenderer, s, 2, this.height - 10, -1);
-      this.drawString(this.fontRenderer, "Copyright Mojang AB. Do not distribute!", this.widthCopyrightRest, this.height - 10, -1);
+      this.drawString(this.fontRenderer, "Copyright Mojang AB & XiaoYu233. Do not distribute!", this.widthCopyrightRest, this.height - 10, -1);
+      GlStateManager.pushMatrix();
+      GlStateManager.scalef(2, 2, 1);
+      this.drawCenteredString(this.fontRenderer,"Made by XiaoYu233",this.width/4,2,-1);
+      GlStateManager.popMatrix();
       if (p_73863_1_ > this.widthCopyrightRest && p_73863_1_ < this.widthCopyrightRest + this.widthCopyright && p_73863_2_ > this.height - 10 && p_73863_2_ < this.height) {
          drawRect(this.widthCopyrightRest, this.height - 1, this.widthCopyrightRest + this.widthCopyright, this.height, -1);
       }

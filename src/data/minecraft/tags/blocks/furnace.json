@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:clay_furnace",
+    "minecraft:hardened_clay_furnace",
+    "minecraft:cobblestone_furnace",
+    "minecraft:netherrack_furnace",
+    "minecraft:obsidian_furnace",
+    "minecraft:sandstone_furnace"
+  ]
+}

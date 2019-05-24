@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:clay"
+    }
+  },
+  "craftTime": 1000,
+  "craftTier": 0,
+  "result": {
+    "item": "minecraft:clay_furnace"
+  }
+}

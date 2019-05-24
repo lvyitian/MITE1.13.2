@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "craftTime": 1000,
+  "craftTier": 0,
+  "result": {
+    "item": "minecraft:emerald_shard",
+    "count": 9
+  }
+}

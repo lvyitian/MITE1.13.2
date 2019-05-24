@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond_shard"
+    }
+  },
+  "craftTime": 1000,
+  "craftTier": 2,
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

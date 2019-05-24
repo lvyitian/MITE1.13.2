@@ -13,12 +13,12 @@ public abstract class GuiButtonImage extends GuiButton {
    private final int yTexStart;
    private final int yDiffText;
 
-   public GuiButtonImage(int p_i47392_1_, int p_i47392_2_, int p_i47392_3_, int p_i47392_4_, int p_i47392_5_, int p_i47392_6_, int p_i47392_7_, int p_i47392_8_, ResourceLocation p_i47392_9_) {
-      super(p_i47392_1_, p_i47392_2_, p_i47392_3_, p_i47392_4_, p_i47392_5_, "");
-      this.xTexStart = p_i47392_6_;
-      this.yTexStart = p_i47392_7_;
-      this.yDiffText = p_i47392_8_;
-      this.resourceLocation = p_i47392_9_;
+   public GuiButtonImage(int buttonID, int x, int y, int width, int height, int xTexStart, int yTexStart, int yDiffText, ResourceLocation resourceLocation) {
+      super(buttonID, x, y, width, height, "");
+      this.xTexStart = xTexStart;
+      this.yTexStart = yTexStart;
+      this.yDiffText = yDiffText;
+      this.resourceLocation = resourceLocation;
    }
 
    public void setPosition(int p_191746_1_, int p_191746_2_) {
