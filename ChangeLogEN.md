@@ -9,7 +9,7 @@ _**(Due to copyright problems with this mod, I have to stop a version to make th
 ## Generating
 * Change the height of the dungeon in the underworld, with a minimum of 140
 ## Bug fix
-* fix #34 
+* fix [#34](https://github.com/XiaoYuOvO/MITE1.13.2/issues/34) 
 --- 
 # B0.5.7 ChangeLog
 ## Generating
