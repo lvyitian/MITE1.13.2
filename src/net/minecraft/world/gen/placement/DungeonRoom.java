@@ -14,7 +14,7 @@ public class DungeonRoom extends BasePlacement<DungeonRoomConfig> {
 
       for(int j = 0; j < i; ++j) {
          int k = p_201491_3_.nextInt(16);
-         int l = p_201491_3_.nextInt(p_201491_2_.getMaxHeight());
+         int l = p_201491_3_.nextInt(p_201491_2_.getMaxHeight()-p_201491_5_.minHeight)+p_201491_5_.minHeight;
          int i1 = p_201491_3_.nextInt(16);
          p_201491_6_.func_212245_a(p_201491_1_, p_201491_2_, p_201491_3_, p_201491_4_.add(k, l, i1), p_201491_7_);
       }

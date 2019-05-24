@@ -99,6 +99,7 @@ public abstract class Feature<C extends IFeatureConfig> {
    public static final Feature<NoFeatureConfig> VINES = new VinesFeature();
    public static final Feature<NoFeatureConfig> WATERLILY = new WaterlilyFeature();
    public static final Feature<NoFeatureConfig> DUNGEONS = new DungeonsFeature();
+   public static final Feature<NoFeatureConfig> UNDERWORLD_DUNGEONS = new UnderworldDungeonsFeature();
    public static final Feature<NoFeatureConfig> BLUE_ICE = new BlueIceFeature();
    public static final Feature<IcebergConfig> ICEBERG = new IcebergFeature();
    public static final Feature<BlockBlobConfig> BLOCK_BLOB = new BlockBlobFeature();
