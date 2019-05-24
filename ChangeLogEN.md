@@ -1,4 +1,14 @@
 [中文版](https://github.com/XiaoYuOvO/MITE1.13.2/blob/master/ChangeLogCN.md)
+# B0.5.8 ChangeLog
+_**(Due to copyright problems with this mod, I have to stop a version to make these changes.)**_
+## Technical
+* Pack MITE into .exe file,to make it unable to be decompiled
+## GUI
+* Add the ID of the author of this mod to the main GUI and credits list
+* Add a button to open the Github repository to the main GUI
+## Generating
+* Change the height of the dungeon in the underworld, with a minimum of 140
+--- 
 # B0.5.7 ChangeLog
 ## Generating
 * Add the two bedrock layers and its stone hole in the underworld's underground

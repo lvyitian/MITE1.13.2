@@ -27,13 +27,13 @@ public abstract class GuiButton extends Gui implements IGuiEventListener {
       this(p_i1020_1_, p_i1020_2_, p_i1020_3_, 200, 20, p_i1020_4_);
    }
 
-   public GuiButton(int p_i46323_1_, int p_i46323_2_, int p_i46323_3_, int p_i46323_4_, int p_i46323_5_, String p_i46323_6_) {
-      this.id = p_i46323_1_;
-      this.x = p_i46323_2_;
-      this.y = p_i46323_3_;
-      this.width = p_i46323_4_;
-      this.height = p_i46323_5_;
-      this.displayString = p_i46323_6_;
+   public GuiButton(int buttonID, int x, int y, int width, int height, String disString) {
+      this.id = buttonID;
+      this.x = x;
+      this.y = y;
+      this.width = width;
+      this.height = height;
+      this.displayString = disString;
    }
 
    protected int getHoverState(boolean p_146114_1_) {

@@ -100,6 +100,8 @@ public class GuiWinGame extends GuiScreen {
             InputStream inputstream1 = this.mc.getResourceManager().getResource(new ResourceLocation("texts/credits.txt")).getInputStream();
             BufferedReader bufferedreader1 = new BufferedReader(new InputStreamReader(inputstream1, StandardCharsets.UTF_8));
 
+            this.lines.add("                            ============");
+            this.lines.add("                      MITE1.13.2 Creator: XiaoYu233");
             String s4;
             while((s4 = bufferedreader1.readLine()) != null) {
                s4 = s4.replaceAll("PLAYERNAME", this.mc.getSession().getUsername());
