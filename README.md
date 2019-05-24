@@ -1,4 +1,5 @@
 [中文版](https://github.com/X1AOYu233/MITE1.13.2/blob/master/README_CN.md)
+# **_Note that this version is also in the beta, so it will not release the modpack that can be started directly._**
 # MITE1.13.2
 **_It’s impossible for a person to just make a few carrots and make a night vision potion.
 Go to the underground world and dig diamonds then get rich overnight._**
