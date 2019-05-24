@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B B",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "craftTime": 1000,
+  "craftTier": 3,
+  "result": {
+    "item": "minecraft:obsidian_furnace"
+  }
+}

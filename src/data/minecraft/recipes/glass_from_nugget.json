@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass_shard"
+    }
+  },
+  "craftTime": 1000,
+  "craftTier": 1,
+  "result": {
+    "item": "minecraft:glass"
+  }
+}
